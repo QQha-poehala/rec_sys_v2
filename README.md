@@ -1,4 +1,4 @@
-# single-distribution
+# How to launch the application?
 
 
 # Start
