@@ -1,0 +1,46 @@
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:16.0
+    restart: always
+    environment:
+      POSTGRES_DB: rec_sys_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5434:5432
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d rec_sys_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  server:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:3000
+      - ConnectionStrings__DataBase=Host=postgres;Port=5432;Database=rec_sys_db;User ID=postgres;Password=postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  client:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+       - REACT_APP_API_URI=http://localhost:3000
+    depends_on:
+      - server
+
+volumes:
+  postgres-data:
