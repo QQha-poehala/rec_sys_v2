@@ -1,0 +1,161 @@
+.admin-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  width: max-content;
+}
+
+.admin-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 300;
+}
+
+.admin-button {
+  width: 100%;
+  padding: 12px;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.admin-button:hover {
+  background-color: #f2f2f2;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.admin-table th, .admin-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+}
+.admin-table th:nth-child(1), .admin-table td:nth-child(1) {
+  width: 150px;
+}
+
+.admin-table th:nth-child(2), .admin-table td:nth-child(2) {
+  width: 300px;
+}
+
+.admin-table th:nth-child(3), 
+.admin-table td:nth-child(3),
+.admin-table th:nth-child(4), 
+.admin-table td:nth-child(4),
+.admin-table th:nth-child(5), 
+.admin-table td:nth-child(5) {
+  width: 200px;
+}
+
+.json-container {
+  max-height: 150px;
+  overflow-y: auto;
+  background-color: #f8f9fa;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+  white-space: pre-wrap;
+}
+
+.input-data-column {
+  width: 300px;
+  max-width: 300px;
+}
+
+.input-data-cell {
+  max-width: 300px;
+  overflow: hidden;
+}
+
+.json-container {
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.json-data {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+.admin-actions {
+  gap: 20px; 
+  margin-bottom: 30px;
+}
+
+.total-count {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 15px;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+}
+
+.pagination-button {
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.pagination-button:hover {
+  background-color: #e0e0e0;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-number {
+  font-size: 1.1em;
+  font-weight: 500;
+  min-width: 100px;
+  text-align: center;
+}
+@media (max-width: 470px){
+  .logo {
+      width: 297px;
+  }
+}
