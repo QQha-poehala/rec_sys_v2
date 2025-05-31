@@ -3,7 +3,7 @@ import "./AdminPageAuth.css";
 import { useNavigate } from "react-router-dom";
 import { AuthService } from "../../shared/services/AuthService";
 import { AuthModel } from "../../shared/models/AuthModel"; 
-import NSTUlogo from '../../assets/pics/NSTU-logo.png';
+import NSTUlogo from '../../assets/pics/logo_white.png';
 
 const AdminPageAuth: React.FC<{ onLogin?: () => void }> = ({ onLogin }) => {
   const [login, setLogin] = useState("");

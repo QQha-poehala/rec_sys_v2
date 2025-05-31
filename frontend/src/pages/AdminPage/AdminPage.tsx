@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./AdminPage.css";
-import NSTUlogo from '../../assets/pics/NSTU-logo.png';
+import NSTUlogo from '../../assets/pics/logo_white.png';
 import { useLocation, useNavigate } from "react-router-dom";
 import { ExportToCsvService } from "../../shared/services/ExportTocsvService";
 import { GetDataService } from "../../shared/services/GetDataService";
@@ -137,7 +137,9 @@ const AdminPage: React.FC = () => {
 return (
     <div className="admin-container">
         <img src={NSTUlogo} alt="logo" className="logo" />
-        <h1>Админ-панель</h1>
+        <div className="admin-panel">
+            Админ-панель
+        </div>
         
         <div className="admin-actions">
             <button onClick={exportToCSV} className="admin-button">

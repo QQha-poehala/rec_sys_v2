@@ -9,8 +9,9 @@
 }
 
 .logo {
-  width: max-content;
-}
+    width: 50%; 
+    height: auto;
+  }
 
 .admin-input {
   width: 100%;
@@ -37,10 +38,16 @@
 .admin-button:hover {
   background-color: #f2f2f2;
 }
+.admin-panel{
+    font-size: 36px;
+    font-weight: 350;
+    color: white;
+}
 
 .admin-table {
   width: 100%;
   border-collapse: collapse;
+  color: white
 }
 
 .admin-table {
@@ -81,6 +88,7 @@
   font-family: monospace;
   font-size: 0.9em;
   white-space: pre-wrap;
+  color: black;
 }
 
 .input-data-column {
@@ -118,6 +126,7 @@
   font-size: 1.5em;
   font-weight: 500;
   margin: 15px;
+  color: white;
 }
 
 .pagination-controls {
@@ -153,6 +162,7 @@
   font-weight: 500;
   min-width: 100px;
   text-align: center;
+  color:white;
 }
 @media (max-width: 470px){
   .logo {
@@ -165,6 +175,7 @@
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    color: black
   }
 
   .admin-table thead {

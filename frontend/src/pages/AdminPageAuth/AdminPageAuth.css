@@ -11,7 +11,7 @@
 }
 
 .logo {
-  width: max-content;
+  width: 297px;
 }
 
 .auth-title {
@@ -64,10 +64,11 @@
 
 @media(max-width: 470px) {
   .logo {
-      width: 297px;
+    width: 50%; 
+    height: auto;
   }
   .auth-title {
-      font-size: 45px;
+      font-size: 40px;
       line-height: 56px;
   }
   .auth-subtitle {
@@ -80,5 +81,6 @@
   }
   .auth-input {
       font-size: 18px;
+      line-height: normal;
   }
 }

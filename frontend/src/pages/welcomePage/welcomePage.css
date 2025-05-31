@@ -7,13 +7,13 @@
 }
 
 .logo {
-    width: max-content;
+    width: 300px;
 }
 
 .title {
     font-size: 96px;
     font-weight: 400;
-    color: white;
+    color: black;
 }
 
 .subtitle {
